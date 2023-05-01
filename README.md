@@ -101,4 +101,3 @@ router.put("/jobs/:jobID", updateJob) permet de mettre à jours une annonce par 
 
 router.delete("/jobs/:jobID", deleteJob); permet de supprimer définitiement une annonce par son ID
 
-
