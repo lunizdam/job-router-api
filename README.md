@@ -66,31 +66,7 @@ requierementsContent de type string : corresponds aux exigences requises,
 
 roleContent de type string : Texte correspondant aux roles et taches demandées.
 
---------------------------------------------------------------
-
-Les routes du Router.js :
-
-router.get("/jobs", getJobs); permet de recup toutes les annonces
-
-router.get("/jobs/:jobID", getJobsID) permet de récup un ID d'une anoonce
-
-router.post("/jobs", createJob); permet de créer une annonce
-
-router.put("/jobs/:jobID", updateJob) permet de mettre à jours une annonce par son ID
-
-router.delete("/jobs/:jobID", deleteJob); permet de supprimer définitiement une annonce par son ID
-
-------------------------------------------------------------------------
-
-apply : correspond à un lien fake pour simuler le fait de postuler a l'annonce,
-
-description de type string : description de l'annonce,
-
-requierementsContent de type string : corresponds aux exigences requises,
-
-roleContent de type string : Texte correspondant aux roles et taches demandées.
-
---------------------------------------------------------------
+-
 
 
 Les routes du Router.js :
