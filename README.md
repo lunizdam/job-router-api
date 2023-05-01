@@ -1,5 +1,4 @@
 [Job router API] :
-
 Avant de commencer:
 Cette Api Jobrouter consiste à mettre en relation le projet Jobs( petites annonces en react) et mongoDB ou sont stockées les données. Pour commencer, voici une explication la plus complête possible sur L'API Job router.
 Dans un premier temps, verifier que vous avez installer Node JS sur votre ordinateur.
