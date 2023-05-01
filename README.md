@@ -39,6 +39,7 @@ Si tout est correctement installé vous verrez dans le terminal que le serveur s
 Ce qui veut dire que le serveur est prêt pour recevoir les requête.
 
 ------------------------------------------------------
+
 Le model JobsShema :(dossier Model / jobs.js) 
 :
 Le mongoose Schema utilisé pour cette Api :
@@ -66,6 +67,7 @@ requierementsContent de type string : corresponds aux exigences requises,
 roleContent de type string : Texte correspondant aux roles et taches demandées.
 
 --------------------------------------------------------------
+
 Les routes du Router.js :
 
 router.get("/jobs", getJobs); permet de recup toutes les annonces
@@ -89,6 +91,8 @@ requierementsContent de type string : corresponds aux exigences requises,
 roleContent de type string : Texte correspondant aux roles et taches demandées.
 
 --------------------------------------------------------------
+
+
 Les routes du Router.js :
 
 router.get("/jobs", getJobs); permet de recup toutes les annonces
