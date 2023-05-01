@@ -5,7 +5,7 @@ Cette Api Jobrouter consiste à mettre en relation le projet Jobs( petites annon
 Dans un premier temps, verifier que vous avez installer Node JS sur votre ordinateur.
 Si ce n'est pas la cas, sous windows ou Mac : https://nodejs.org/en/download
 Cela vous permettra de pouvoir utiliser NPM qui est le de gestionnaire de Packages de Node.js.
------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
 Ouvrir le projet du Job Router Api depuis VS CODE.
 Avant toute chose vous devez installer les packages dont l'api router aura besoin en tapant cette commande depuis le terminal de VS CODE :
 npm install mongoose express dotenv cors
@@ -31,6 +31,19 @@ postedAt : Date de l'annonce lorsqu'elle à été postée;
 contract de type Boolean : type de contact en temps plein ou temps partiel,
 location de type sting : correspond au pays du contrat,
 website de type string : correspond l'Url du site de la société
+apply : correspond à un lien fake pour simuler le fait de postuler a l'annonce,
+description de type string : description de l'annonce,
+requierementsContent de type string : corresponds aux exigences requises,
+roleContent de type string : Texte correspondant aux roles et taches demandées.
+--------------------------------------------------------------
+Les routes du Router.js :
+router.get("/jobs", getJobs); permet de recup toutes les annonces
+router.get("/jobs/:jobID", getJobsID) permet de récup un ID d'une anoonce
+router.post("/jobs", createJob); permet de créer une annonce
+router.put("/jobs/:jobID", updateJob) permet de mettre à jours une annonce par son ID
+router.delete("/jobs/:jobID", deleteJob); permet de supprimer définitiement une annonce par son ID
+------------------------------------------------------------------------
+
 apply : correspond à un lien fake pour simuler le fait de postuler a l'annonce,
 description de type string : description de l'annonce,
 requierementsContent de type string : corresponds aux exigences requises,
